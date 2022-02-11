@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'HSSaemaul-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.boardview{
+	max-width:1360px;
+	margin: 0 auto;
+	padding-top: 50px;
+	
+}
+.viewWrap{
+	max-width:930px;
+	margin: 0 auto;
+}
+.viewname{
+	width:100%;
+	font-size:35px;
+	font-family:HSSaemaul-Regular;
+	margin-bottom: 10px;
+	color:#c72d1b;
+	box-sizing: border-box;
+	position: relative;
+}
+.viewname span{
+
+}
+.viewicon{
+	font-size: 15px;
+	color:black;
+}
+.viewicon img{
+	vertical-align:middle;
+	width: 20px;
+	margin-top: -1px;
+	margin-right: 5px;
+}
+.viewcontents{
+	max-width:908px;
+	padding: 10px 10px 0 10px;
+}
+.viewcontentsWrap{
+	font-size: 17px;
+}
+.Nick{
+	font-size: 25px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.remove{
+	width:100px;
+	height: 30px;
+	font-size: 18px;
+	margin-top: 30px;
+}
+.reply{
+	max-width:930px;
+	margin:20px auto;
+	display: flex;
+	align-items:  center;
+	padding: 5px;
+}
+.replyWrap{
+	width:100%;
+}
+textarea {
+	width:100%;
+	height: 85px;
+	resize: none;
+}
+textarea:focus{
+		outline: none;
+	}
+.replyBtn input{
+	margin-left: 10px;	
+}
+.userReply{
+	max-width:930px;
+	margin:30px auto;
+
+}
+.replyTle{
+	border-top:1px solid black;
+	width:100%;
+
+}
+.userInfo{
+	padding: 10px;
+}
+.replyText{
+	padding: 14px;
+}

@@ -1,0 +1,88 @@
+@font-face {
+	font-family: 'BinggraeSamanco-Bold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+	.movieHead {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.movieHeadWrap {
+	max-width: 700px;
+	margin: 0 auto;
+	height: 150px;
+}
+
+.movieFont {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 150px;
+}
+
+.movieLogo {
+	font-family: BinggraeSamanco-Bold;
+	font-size: 75px;
+	color:#00539C;
+	text-shadow: 3px 2px 2px #F5D042;
+}
+.movieSearch{
+	max-width:1400px;
+	margin: 0 auto;
+}
+.movieSearchWrap{
+	max-width: 700px;
+	height: 40px;
+	background-color:#00539C;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+.search{
+	width:100%;
+	height: 100%;
+}
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+[list]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+#movieSearch{
+width:675px;
+height:25px;
+border-radius: 5px;
+position: absolute;
+top:50%;
+transform:translateY(-50%);
+}
+a{
+text-decoration: none;
+}
+@media screen and (max-width:750px){
+	.movieHead{
+		width:100%;
+	}
+	.movieHeadWrap{
+		width:100%;
+	}
+	
+	
+	.movieSearchWrap{
+	max-width: none;
+		margin: 0;
+		width:100%;
+		padding: 0;
+	}
+	#movieSearch{
+		width:99%;
+	}
+	
+}

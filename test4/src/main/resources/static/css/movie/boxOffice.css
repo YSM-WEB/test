@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'BinggraeSamanco-Bold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'OTWelcomeBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.movieChart {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.movieChartWrap {
+	
+}
+
+.chart {
+	width: 100%;
+	display: flex;
+}
+
+.movie {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.movieWrap {
+	margin-top: 15px;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+.movieWrap td{
+	font-family: OTWelcomeBA;
+	padding: 10px;
+
+}
+td img{
+	border-radius: 10px;
+}
+.tdRankM{
+	font-size: 13px;
+	color:red;
+}
+.tdRankP{
+	font-size: 13px;
+	color:green;
+}
+.tdNew{
+	font-size: 13px;
+	color: blue;
+}
+.movieRank{
+	text-align: center;
+}
+.chartLogo{
+	font-family: BinggraeSamanco-Bold;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+	color:#00539C;
+	text-shadow: 3px 2px 2px #FFD662;
+}
+@media screen and (max-width:750px){
+
+	.movieWrap{
+		margin-top: 25px;
+	}
+
+	.chart{
+		flex-direction: column;
+		align-items: center;
+	}
+	.movie{
+		width:100%;
+	}
+	
+}

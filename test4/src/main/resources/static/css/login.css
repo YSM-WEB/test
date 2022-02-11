@@ -1,0 +1,67 @@
+.login{
+		width:100%;
+	
+	}
+	.loginWrap{
+		max-width:500px;
+		min-widht:430px;
+		margin: 0 auto;
+	}
+	.loginWrap input{
+		width:100%;
+		height: 50px;
+		letter-spacing: 0.9rem;
+		font-size: 25px;
+		border-radius: 5px;
+	}
+	.logo{
+		max-width:500px;
+		min-widht:430px;
+		margin: 0 auto;
+		padding:60px 0 45px;
+		text-align: center;
+		
+	}
+	.logo a{
+		font-size: 45px;
+		font-weight: 700;
+		color:#00539C;
+	}
+	.inputWrap{
+		
+		border: 1px solid black;
+		margin-bottom: 23px;
+		padding: 10px 10px;
+		border-radius: 5px;
+	}
+	.inputWrap input{
+		width:100%;
+		height:30px;
+		box-sizing: border-box;
+		border: none;
+		font-size: 20px;
+		letter-spacing: 0;
+
+	}
+	.inputWrap input:focus{
+		outline: none;
+	}
+	.logintip{
+		margin-bottom: 7px;
+		font-weight: 700;
+		font-size: 17px;
+		color:#00539C;
+	}
+	#subBtn{
+		background-color: #FFD662;
+		color:#00539C;
+		border:1px solid black;
+	}
+	.tooltip{
+		margin-top: 18px;
+		color: red;
+	}
+	
+	@media screen and (max-width:512px){
+		
+	}

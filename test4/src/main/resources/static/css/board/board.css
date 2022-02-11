@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.board{
+	max-width:1360px;
+	min-height: 710px;
+	margin:0 auto;
+	
+	
+}
+.boardWrap{
+	padding-top:20px;
+	height: 100%;
+}
+.boardNpage{
+
+	
+	position: relative;
+}
+.page{
+	width:100%;
+	height: 100%;
+	
+}
+table{
+	width:100%;
+	height:100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: #00539C;
+}
+
+tr{
+	width:100%;
+	height:65px;
+}
+td{
+	font-size: 15px;
+	border-bottom: 1px solid gray;
+	box-sizing: border-box;
+
+}
+.boardName a{
+	color: #00539C;
+	
+}
+.boardName{
+	width:60%;
+	font-size:18.5px;
+	padding-left: 30px;
+	font-family:Cafe24SsurroundAir;
+}
+.boardNick,.boardTime,.boardLook,.boardReply{
+	color: #00539C;
+}
+
+.WriteBtn{
+	width:100px;
+	height: 35px;
+	color:white;
+	line-height: 35px;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #005282;
+	border-radius: 5px;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+.paging{
+	margin-top: 17.5px;
+	
+	color: gray;
+	font-size: 19px;
+}
+.paging a{
+	margin: 0 11px;
+	font-weight: 100;
+}
+.paging span{
+	margin: 0 11px;
+	font-weight: 1000;
+	cursor: pointer;
+}
+.page img{
+	width:15px;
+	margin-right: 10px;
+	vertical-align: middle;
+	
+}
+.page span{
+	vertical-align: middle;
+}
+.WriteBtn a{
+	text-decoration: none;
+	color:white;
+}
+@media screen and (max-width:750px){
+	.paging{
+		font-size:3vw;
+	}
+	.paging a{
+		margin:0;
+	}
+	.paging span{
+		margin:0;
+	}
+	.WriteBtn{
+		width:80px;
+	height: 28px;
+	}
+	td{
+		font-size: 11px;
+	}
+	.boardName{
+		font-size: 13px;
+	}
+	.boardTime,.boardLook{
+		display: none;
+	}
+	.boardNick{
+		min-width:86px;
+	}
+	.boardReply{
+		min-width:60px;
+	}
+	
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+   <!-- main -->
+   <definition name="main-layout" template="/WEB-INF/views/layout/layout.jsp">
+       <put-attribute name="head" value="/WEB-INF/views/layout/head.jsp" />
+       <put-attribute name="body" value="" />
+       <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+   </definition>
+   
+   <definition name="main-layout2" template="/WEB-INF/views/layout/layout3.jsp">
+       <put-attribute name="body" value="" />
+   </definition>
+   
+   <definition name="movie-layout" template="/WEB-INF/views/layout/movie/movieLayout.jsp">
+       <put-attribute name="head" value="/WEB-INF/views/layout/movie/moviehead.jsp" />
+       <put-attribute name="body" value="" />
+   </definition>
+   
+   
+   <definition name="movie/*" extends="movie-layout">
+       <put-attribute name="body" value="/WEB-INF/jsp/movie/{1}.jsp" />
+   </definition>
+   
+   <definition name="main/*" extends="main-layout">
+       <put-attribute name="body" value="/WEB-INF/jsp/main/{1}.jsp" />
+   </definition>
+   
+   
+   <definition name="main-layout3" template="/WEB-INF/views/layout/layout3.jsp">
+       <put-attribute name="body" value="" />
+   </definition>
+   <definition name="member" extends="main-layout2">
+       <put-attribute name="body" value="/WEB-INF/jsp/member.jsp" />
+   </definition>
+   <definition name="login" extends="main-layout2">
+       <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+   </definition>
+   <definition name="imgSound" extends="main-layout3">
+       <put-attribute name="body" value="/WEB-INF/jsp/imgSound.jsp" />
+   </definition>
+
+   <definition name="*" extends="main-layout">
+       <put-attribute name="body" value="/WEB-INF/jsp/{1}.jsp" />
+   </definition>
+   <definition name="user/*" extends="main-layout">
+       <put-attribute name="body" value="/WEB-INF/jsp/user/{1}.jsp" />
+   </definition>
+   <definition name="main/*/*" extends="main-layout">
+       <put-attribute name="body" value="/WEB-INF/jsp/main/body/{1}/{2}.jsp" />
+   </definition>
+    <definition name="board/*" extends="main-layout">
+       <put-attribute name="body" value="/WEB-INF/jsp/board/{1}.jsp" />
+   </definition>
+
+</tiles-definitions>

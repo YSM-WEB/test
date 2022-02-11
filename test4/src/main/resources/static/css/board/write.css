@@ -1,0 +1,71 @@
+form{
+	width: 100%;
+		height: 100%;
+}
+	.boardWrite{
+		width: 100%;
+		height: 100%;
+	}
+	.boardWriteWrap{
+		width:100%;
+		height:100%;
+		display: flex;
+		justify-content: center;
+	}
+	.WriteWrap{
+		width:85%;
+		height: 100%;
+				
+	}
+	.WriteTitle{
+		width:100%;
+		height:4%;
+		display: flex;
+	}
+	.WriteTitle input{
+		width:100%;
+		height: 100%;
+		border-radius: 5px;
+		padding-left: 10px;
+		border:5px solid black;
+		font-weight: 700;
+	}
+	.WriteWrap input:focus{
+		outline: none;
+	}
+	.wirteBtn{
+		width:100%;
+		position: relative;
+		
+	}
+	.Btn{
+		width:100px;
+	height: 35px;
+	color:white;
+	line-height: 35px;
+	text-align: center;
+	margin-top:5px;
+	background-color: #005282;
+	border-radius: 5px;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	}
+	.WriteMemo{
+	width:100%;
+	height:85%;
+	margin-top: 15px;
+	}
+	textarea{
+		width:100%;
+		height: 100%;
+		border-radius: 5px;
+		resize: none;
+		box-sizing: border-box;
+		padding: 10px;
+		font-size: 16px;
+		border:5px solid black;
+	}
+	textarea:focus{
+		outline: none;
+	}

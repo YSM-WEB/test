@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test4.board.BoardMapper">
+    <select id="boardfind" resultType="int">
+        select count(*) from board;
+    </select>
+    
+    <select id="board" resultType="Board">
+        select * from board order by boardNum desc limit #{page},10;
+    </select>
+    
+    <insert id="boardWrite">
+    	insert into
+    	board(boardName,boardWrite,boardNick)
+    	values(#{boardName},#{boardWrite},#{boardNick});
+    </insert>
+    <select id="boardview" resultType="Board">
+        select * from board where boardNum=#{num};
+    </select>
+    
+    <update id="boardLook">
+    	update board
+    	set boardLook = boardLook+1
+    	where boardNum=#{num};
+    </update>
+    <update id="replyUp">
+    	update board
+    	set boardReply = boardReply+1
+    	where boardNum=#{num};
+    </update>
+    <delete id="boardRemove">
+    	delete from board
+    	where boardNum=#{num};
+    </delete>
+    <insert id="replyWrite">
+    	insert into
+    	reply(boardNum,replyText,memid)
+    	values(#{num},#{text},#{id});
+    </insert>
+    <select id="boardReply" resultType="java.util.Map">
+        select replyText,replyTime,memid from reply where boardNum = ${num};
+    </select>
+</mapper>

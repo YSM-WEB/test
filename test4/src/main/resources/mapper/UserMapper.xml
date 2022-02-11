@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test4.Mapper">
+    <select id="userfind" resultType="User">
+        SELECT * FROM user;
+    </select>
+    <select id="memberid" resultType="int">
+        SELECT count(*) FROM user where memid=#{id};
+    </select>
+     <insert id="memberOk">
+        insert into
+        user(memid,mempwd,memname,membirth)
+        values(#{memId},#{mempwd},#{memname},#{birth});    
+    </insert>
+     <select id="userlogin" resultType="com.test4.security.CtUserDetails">
+        SELECT * FROM user where memid=#{username};
+    </select>
+
+</mapper>

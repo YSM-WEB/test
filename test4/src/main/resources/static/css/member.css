@@ -1,0 +1,74 @@
+.membership{
+		width:100%;
+	}
+	
+	.membershipWrap{
+		max-width:500px;
+		min-widht:430px;
+		margin: 0 auto;
+
+	}
+	.signup{
+
+
+	}
+	membershipWrap div{
+		width:100%;
+	}
+	.membershipWrap input:focus{
+		outline:2px solid pink;
+		border:none;
+	}
+	.membershipWrap input{
+		border:1px solid gray;
+		width:100%;
+		height:100%;
+		box-sizing: border-box;
+		padding: 5px 10px;
+		font-size: 17px;
+		border-radius:7px; 
+	}
+	.membertip{
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		color:#00539C;
+	}
+	.logo{
+		max-width:500px;
+		min-widht:430px;
+		margin: 0 auto;
+		padding:60px 0 45px;
+		text-align: center;
+	}
+	.logo a{
+		font-size: 45px;
+		font-weight: 700;
+		color:#00539C;
+	}
+	.meminfo{
+		height: 45px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+	}
+	.memberjoin{
+		margin-top: 50px;
+	}
+	.memberbirth{
+		display: flex;
+		justify-content: space-between;
+	}
+	.memberbirth input,select{
+		width:32%;
+	}
+	.tooltip{
+		margin: 10px 0;
+		color: red;
+	}
+	.correct{
+		outline:2px solid #00498c;
+	}
+	#subBtn{
+		color:#00539C;
+		background-color: #FFD662;
+	}
