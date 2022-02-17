@@ -31,3 +31,15 @@ http://sungmin123.loca.lt ( localtunnel )
 
 #### 4. imgSound
 사계절에 맞는 랜덤이미지와 오디오의 파형을 표현한 페이지
+이미지 캔버스 - 랜덤이미지를 제공하는 외부API를 사용하여 이미지를 표현하는 섹션
+오디오(파형) 캔버스
+          1. 캔버스 컨텍스트의 getImageData()메소드를 사용하여 이미지의 r,g,b,a픽셀값을 구하고 16진수로 변환시켜 rgba값을 구한다.
+          2. context.createAnalyser() // 오디오의 주파수 정보를 가지고있는 analyser를 생성
+             context.createMediaElementSource(audio) // 오디오의 source를 가져옴
+             sourc.connet(analyser) // 소스에 analyser를 연결
+             analyser.connect(context.destination) // 오디오 출력을위한 analyser에 연결 (선택사항)
+             new Uint8Array(analyser.frequencyBinCount) // 객체를 사용하여 시각화를위한 데이터값을 배열에 저장(8비트 부호없는 정수)
+             analyser.getByteFrequencyData(8비트 부호없는 정수 배열) // 전달받은 8비트 부호없는정수배열(Uint8Array)내에 현재주파수를 복사
+             오디오의 주파수 정보를 가져와 오디오의 캔버스에 원하는 레이아웃으로 오디오의 파형을 표현하고 이미지의 rgba값을 사용하여 색을 입힘
+         
+오디오 정보 관련들 출처 - 오디오 관련 정보참고 Roy Blog(https://shs400.github.io/2021/04/14/audio-api/)
